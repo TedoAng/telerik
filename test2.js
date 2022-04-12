@@ -35,6 +35,8 @@ if (5 <= numbOfWords && numbOfWords <= 500) {
 
 console.log(Object.values(resultArr) + " " + Object.keys(resultArr)); //print
 
+//========================================
+
 // expected output: 0
 // expected output: 1
 // expected output: 2
@@ -61,3 +63,11 @@ console.log(Object.values(resultArr) + " " + Object.keys(resultArr)); //print
 //   }
 //   console.log(message);
 // }
+
+//========================================
+// let input = 28;
+
+// let big = Math.floor(input / 5);
+// let small = Math.abs(big * 5 - input);
+
+// console.log(`small blocks: ${small} and big blocks ${big}`);
