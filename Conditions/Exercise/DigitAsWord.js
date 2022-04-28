@@ -12,36 +12,36 @@ let gets =
 
 let inp = +gets();
 
-switch (inp.toFixed()) {
-  case "0":
+switch (inp) {
+  case 0:
     print("zero");
     break;
-  case "1":
+  case 1:
     print("one");
     break;
-  case "2":
+  case 2:
     print("two");
     break;
-  case "3":
+  case 3:
     print("three");
     break;
-  case "4":
+  case 4:
     print("four");
     break;
-  case "5":
+  case 5:
     print("five");
     break;
-  case "6":
+  case 6:
     print("six");
     break;
-  case "7":
+  case 7:
     print("seven");
     break;
-  case "8":
+  case 8:
     print("eight");
     break;
-  case "9":
-    print("eight");
+  case 9:
+    print("nine");
     break;
   default:
     print("not a digit");
