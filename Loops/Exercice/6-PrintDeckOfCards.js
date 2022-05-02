@@ -1,4 +1,4 @@
-let input = ["4"];
+let input = [4];
 let print = this.print || console.log;
 let gets =
   this.gets ||
@@ -8,7 +8,7 @@ let gets =
   )(input, 0);
 
 //==============
-let sign = gets();
+let sign = +gets();
 
 if (sign >= 2 && sign <= 10) {
   for (let i = 2; i <= +sign; i++) {
