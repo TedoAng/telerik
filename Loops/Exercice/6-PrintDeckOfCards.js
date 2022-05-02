@@ -15,37 +15,37 @@ if (sign >= 2 && sign <= 10) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
 }
-//JACK
-else if (sign.toLowerCase() === "jack") {
+//Jack
+else if (sign.toLowerCase() === "Jack") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
-  print(`JACK of spades, JACK of clubs, JACK of hearts, JACK of diamonds`);
+  print(`J of spades, J of clubs, J of hearts, J of diamonds`);
 }
-//QUEEN
-else if (sign.toLowerCase() === "queen") {
+//Queen
+else if (sign.toLowerCase() === "Queen") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
-  print(`JACK of spades, JACK of clubs, JACK of hearts, JACK of diamonds`);
-  print(`QUEEN of spades, QUEEN of clubs, QUEEN of hearts, QUEEN of diamonds`);
+  print(`J of spades, J of clubs, J of hearts, J of diamonds`);
+  prin(`Q of spades, Q of clubs, Q of hearts, Q of diamonds`);
 }
-//KING
-else if (sign.toLowerCase() === "king") {
+//King
+else if (sign.toLowerCase() === "King") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
-  print(`JACK of spades, JACK of clubs, JACK of hearts, JACK of diamonds`);
-  print(`QUEEN of spades, QUEEN of clubs, QUEEN of hearts, QUEEN of diamonds`);
-  print(`KING of spades, KING of clubs, KING of hearts, KING of diamonds`);
+  print(`J of spades, J of clubs, J of hearts, J of diamonds`);
+  print(`Q of spades, Q of clubs, Q of hearts, Q of diamonds`);
+  print(`K of spades, K of clubs, K of hearts, K of diamonds`);
 }
 //ACE
 else {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
-  print(`JACK of spades, JACK of clubs, JACK of hearts, JACK of diamonds`);
-  print(`QUEEN of spades, QUEEN of clubs, QUEEN of hearts, QUEEN of diamonds`);
-  print(`KING of spades, KING of clubs, KING of hearts, KING of diamonds`);
-  print(`ACE of spades, ACE of clubs, ACE of hearts, ACE of diamonds`);
+  print(`J of spades, J of clubs, J of hearts, J of diamonds`);
+  print(`Q of spades, Q of clubs, Q of hearts, Q of diamonds`);
+  print(`K of spades, K of clubs, K of hearts, K of diamonds`);
+  print(`A of spades, A of clubs, A of hearts, A of diamonds`);
 }
