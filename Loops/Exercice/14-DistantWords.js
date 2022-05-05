@@ -1,4 +1,8 @@
-let input = ["bob"];
+let input = [28,
+  3,
+  "coffee",
+  "tea",
+  "pineapple"];
 let print = this.print || console.log;
 let gets =
   this.gets ||
@@ -38,6 +42,30 @@ let alphabet = [
   "Z",
 ];
 
-let word = gets().split("");
+let points = +gets();
+let reps = +gets();
 
-for (let i = 0; i < alphabet.length; i++) {}
+let wordResult = 0;
+
+
+
+for (let i = 0; i < reps; i++) {
+  let original = gets();
+  let word = original.split("");
+  
+
+  for (let j = 0; j < word.length; j++) {
+    let letter = word[j];
+    print(letter);
+
+    for (let k = 0; k < alphabet.length; k++) {
+     
+      if(letter.toLowerCase() === alphabet[k].toLocaleLowerCase()) {
+        wordResult+=k;
+      }      
+    }    
+  }
+  print(original)
+}
+
+print();
