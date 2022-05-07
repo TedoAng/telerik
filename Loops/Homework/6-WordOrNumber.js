@@ -9,28 +9,33 @@ let gets =
 
 //==============
 
-// do{
-// let check = gets();
-// let output = "";
+for (let index = 0; index < input.length; index++) {
+  
+  
 
-// switch (typeof check) {
-//   case "string":
-//     for (let i = check.length; i >= 0; i--) {
-//       output += check.charAt(i);
-//     }
-//     break;
-//   case "number":
-//     let numb = parseInt(check);
-//     numb++;
-//     output= numb;
-//     break;
-//   default:
-//     break;
-// }
-// print(output);
-// }while(gets())
+let check = gets();
+let output = "";
 
-let test = gets();
- test = gets();
+switch (typeof check) {
+  case "string":
+    for (let i = check.length; i >= 0; i--) {
+      output += check.charAt(i);
+    }
+    print( output);
+    break;
+  case "number":
+    let numb = check;
+    numb++;
+    output= +numb;
+    if(numb % 1){
+      print( numb+"0");
+      break;
+    }
+    print( output);
+    break;
+  default:
+    break;
+}
 
-print(test);
+}
+
