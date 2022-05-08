@@ -9,21 +9,14 @@ let gets =
 
 //==============
 
-let token = +gets();
-let arr = [1,2,3,4,5,6,7];
-let n = 1;
-let face ="";
+let givenNum = +gets();
+let line = "";
 
-for (let i = 0; i < token; i++) {
-    face+=arr[i];
-    
-    for (let m = i+1; m < token+i; m++) {      
-         face+=arr[m] ;       
-       
-    }
-    
-    print(face)
-    face=""
-    
+for (let i = 1; i <= givenNum; i++) {
+  for (let j = 1; j <= givenNum; j++) {
+    let sum = i + j - 1;
+    line += sum + " ";
+  }
+  print(line);
+  line = "";
 }
-
