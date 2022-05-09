@@ -1,4 +1,4 @@
-let input = [4];
+let input = ["j"];
 let print = this.print || console.log;
 let gets =
   this.gets ||
@@ -8,7 +8,7 @@ let gets =
   )(input, 0);
 
 //==============
-let sign = +gets();
+let sign = gets();
 
 if (sign >= 2 && sign <= 10) {
   for (let i = 2; i <= +sign; i++) {
@@ -16,14 +16,14 @@ if (sign >= 2 && sign <= 10) {
   }
 }
 //Jack
-else if (sign.toLowerCase() === "Jack") {
+else if (sign.toLowerCase() === "j") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
   print(`J of spades, J of clubs, J of hearts, J of diamonds`);
 }
 //Queen
-else if (sign.toLowerCase() === "Queen") {
+else if (sign.toLowerCase() === "q") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
@@ -31,7 +31,7 @@ else if (sign.toLowerCase() === "Queen") {
   prin(`Q of spades, Q of clubs, Q of hearts, Q of diamonds`);
 }
 //King
-else if (sign.toLowerCase() === "King") {
+else if (sign.toLowerCase() === "k") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }
@@ -40,7 +40,7 @@ else if (sign.toLowerCase() === "King") {
   print(`K of spades, K of clubs, K of hearts, K of diamonds`);
 }
 //ACE
-else {
+else if (sign.toLowerCase() === "a") {
   for (let i = 2; i <= 10; i++) {
     print(`${i} of spades, ${i} of clubs, ${i} of hearts, ${i} of diamonds`);
   }

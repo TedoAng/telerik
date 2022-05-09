@@ -11,33 +11,21 @@ let gets =
 let n = +gets();
 let string = "";
 let numb = 0;
-let prev = null;
 
-for (let i = 0; i <= n; i++) {
+for (let i = 0; i < n; i++) {
   let data = gets();
-
-  if (prev === null) {
-    prev = data;
-  }
 
   switch (typeof data) {
     case "string":
-      print(numb);
       string += data + "-";
-      prev = data;
-      numb = 0;
       break;
     case "number":
-      print(string);
-      prev = data;
-      if (typeof prev === "number") {
-        print(numb + prev);
-        prev = data;
-        numb = 0;
-      }
+      numb += data;
       break;
 
     default:
       break;
   }
 }
+string ? print(string.substring(0, string.length - 1)) : print("no words");
+print(numb);
